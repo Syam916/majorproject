@@ -22,7 +22,7 @@ from convection.models import  NaturalConvection
 def temp(request):
     return render(request,'temp.html')
 def home(request):
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 def result(request):
     voltage=float(request.POST['Voltage'])
