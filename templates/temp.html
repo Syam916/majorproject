@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/temp.css' %}"> 
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
+</head>
+<body class='b1'>
+    <!-- <div class="nbkr">
+        <img class="n" src="{% static '/images/logo2.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/a.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/b.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/c.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/d.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/e.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/f.jpg' %}" alt="" >
+        
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div> -->
+    
+    <div class="contact-us">
+        <form>
+          <input placeholder="Name" required="" type="text" /><input name="customerEmail" placeholder="Email" type="email" />
+          <input name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
+          <button type="button">SIGN UP</button>
+        </form>
+      </div>
+    
+    </div>
+</body>
+</html>

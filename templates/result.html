@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/temp.css' %}"> 
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
+</head>
+<body class='b1'>
+    <div class="nbkr">
+        <img class="n" src="{% static '/images/logo2.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/a.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/b.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/c.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/d.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/e.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/f.jpg' %}" alt="" >
+        
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    
+    <div class="pic4">
+        <center><h1 class="m1">NATURAL CONVECTION </h1></center>
+    <table>
+        <tr>
+          <th class="ta">Sl no</th>
+          <th class="ta">voltage</th>
+          <th class="ta">current</th>
+          <th class="ta">power</th>
+          <th class="ta">Temperature2</th>
+          <th class="ta">Temperature3</th>
+          <th class="ta">Temperature4</th>
+          <th class="ta">Temperature5</th>
+          <th class="ta">Temperature6</th>
+          <th class="ta">Ambient Temperature</th>
+          <th class="ta">Theoritical Output</th>
+          <th class="ta">Experimental Output</th>
+
+          
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>{{voltage}}</td>
+            <td>{{current}}</td>
+            <td>{{power}}</td>
+            <td>{{temp2}}</td>
+            <td>{{temp3}}</td>
+            <td>{{temp4}}</td>
+            <td>{{temp5}}</td>
+            <td>{{temp6}}</td>
+            <td>{{temp7}}</td>
+            <td>{{y_pred1}}</td>
+            <td>{{y_pred2}}</td>
+
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Manual output</th>
+            <th>Machine Learning Output</th>
+        </tr>
+        <tr>
+            <td>Theoritical</td>
+            <td>{{thtc}}</td>
+            <td>{{y_pred1}}</td>
+
+        </tr>
+        <tr>
+            <td>Experimental</td>
+            <td>{{ehtc}}</td>
+            <td>{{y_pred2}}</td>
+
+        </tr>
+    </table>
+
+    </div>
+    
+    </div>
+</body>
+</html>
