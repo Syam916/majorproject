@@ -257,7 +257,7 @@ li a.active {
     
     .pic3{
         width: auto;
-        height: 1350px;
+        height: 1230px;
         border: 2px solid rgb(14, 15, 14);
         border-radius: 8px;
         background: white;
@@ -316,7 +316,7 @@ li a.active {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 2px 0 5px 0;
-        margin-left: 9px;
+        margin-left: 48px;
         height: 25px;
         width: 200px;
         outline: none;
@@ -349,9 +349,9 @@ li a.active {
         border: 1px solid  black;
         border-collapse: collapse;
         text-align: left;
-        padding: 5px;
+        padding: 2px;
         padding-left: 1px;
-        font-size:9px;
+        font-size:6px;
     }
     th{
         border: 1px solid black;
@@ -359,7 +359,7 @@ li a.active {
         border-collapse: collapse;
         padding-left: 2px;
         padding-bottom: 5px;
-        font-size: 7.5px;
+        font-size: 5px;
         font-weight: bolder;
     }
     .front{
