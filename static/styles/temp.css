@@ -218,7 +218,7 @@ li a.active {
 
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 560px) {
     /* For mobile phones: */
     *{
         padding: 0;
@@ -245,7 +245,7 @@ li a.active {
     .n1{
         margin-bottom: 45px;
         margin-left: 1.2px;
-        width:36px;
+        width:26px;
         height: 50px;
     }
     nav {
@@ -261,8 +261,8 @@ li a.active {
         border: 2px solid rgb(14, 15, 14);
         border-radius: 8px;
         background: white;
-        margin-left: 1px;
-        margin-right: 2px;
+        margin-left: 40px;
+        margin-right: 40px;
         margin-top: 10px;
     }
     .fon{
@@ -283,7 +283,7 @@ li a.active {
         
     }
     .m1{
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Rye', cursive;
         color: rgb(48, 168, 215);
         text-decoration: none;
@@ -308,7 +308,7 @@ li a.active {
         font-family: 'Poppins',sans-serif;
         color: black;
         display: inline-block;
-        font-size: 25px;
+        font-size: 20px;
     
     }
     input{
@@ -318,7 +318,7 @@ li a.active {
         margin: 2px 0 5px 0;
         margin-left: 20px;
         height: 25px;
-        width: 390px;
+        width: 300px;
         outline: none;
         font-size: 16px;
         border-radius: 5px;
