@@ -257,12 +257,12 @@ li a.active {
     
     .pic3{
         width: auto;
-        height: 1200px;
+        height: 1350px;
         border: 2px solid rgb(14, 15, 14);
         border-radius: 8px;
         background: white;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 10px;
     }
     .fon{
@@ -283,7 +283,7 @@ li a.active {
         
     }
     .m1{
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Rye', cursive;
         color: rgb(48, 168, 215);
         text-decoration: none;
@@ -316,9 +316,9 @@ li a.active {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 2px 0 5px 0;
-        margin-left: 20px;
+        margin-left: 9px;
         height: 25px;
-        width: 300px;
+        width: 200px;
         outline: none;
         font-size: 16px;
         border-radius: 5px;
