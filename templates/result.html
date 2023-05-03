@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thermal</title>
+    <title>Convection</title>
     <link rel="stylesheet" href="{% static '/styles/temp.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -35,17 +35,17 @@
     <table>
         <tr>
           <th class="ta">Sl no</th>
-          <th class="ta">voltage</th>
-          <th class="ta">current</th>
-          <th class="ta">power</th>
-          <th class="ta">Tempera ture2</th>
-          <th class="ta">Tempera ture3</th>
-          <th class="ta">Tempera ture4</th>
-          <th class="ta">Tempera ture5</th>
-          <th class="ta">Tempera ture6</th>
-          <th class="ta">Ambient Temperat ure</th>
-          <th class="ta">Theoritical Output</th>
-          <th class="ta">Experimental Output</th>
+          <th class="ta">voltage (V)</th>
+          <th class="ta">current (A)</th>
+          <th class="ta">power (W)</th>
+          <th class="ta">Tempera ture2  (<sup>o</sup>C)</th>
+          <th class="ta">Tempera ture3  (<sup>o</sup>C)</th>
+          <th class="ta">Tempera ture4  (<sup>o</sup>C)</th>
+          <th class="ta">Tempera ture5  (<sup>o</sup>C)</th>
+          <th class="ta">Tempera ture6  (<sup>o</sup>C)</th>
+          <th class="ta">Ambient Temperat ure  (<sup>o</sup>C)</th>
+          <th class="ta">Theoritical Output   (W/m<sup>2</sup>/K)</th>
+          <th class="ta">Experimental Output   (W/m<sup>2</sup>/K)</th>
 
           
         </tr>
@@ -69,17 +69,17 @@
     <table>
         <tr>
             <th>Type</th>
-            <th>Manual output</th>
-            <th>Machine Learning Output</th>
+            <th>Manual Calculation (W/m<sup>2</sup>/K)</th>
+            <th>Machine Learning Prediction (W/m<sup>2</sup>/K)</th>
         </tr>
         <tr>
-            <td>Theoritical</td>
+            <td>Theoretical Heat Transfer Coefficient</td>
             <td>{{thtc}}</td>
             <td>{{y_pred1}}</td>
 
         </tr>
         <tr>
-            <td>Experimental</td>
+            <td>Experimental Heat Transfer Coefficient</td>
             <td>{{ehtc}}</td>
             <td>{{y_pred2}}</td>
 

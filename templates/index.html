@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heat Transfer</title>
+    <title>Convection</title>
     <link rel="stylesheet" href="{% static '/styles/temp.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -32,36 +32,36 @@
         <center><h1>HEAT TRANSFER LABORATORY</h1></center>
     </div>
     <div class="pic3">
-        <center><p class="m1"> <a class= "m1">NATURAL CONVECTION PROCESS</a></p></center>
+        <center><p class="m1">NATURAL CONVECTION PROCESS</p></center>
         <div class="fon">
             <form class="fon" action="result" method="POST">
                 {% csrf_token %}
                 <label>Enter the Voltage :</label>
-                <input type="number" step="0.01" name="Voltage" placeholder="Enter" required><br>
+                <input type="number" min="100" max="180" step="0.01" name="Voltage" placeholder="Enter" required><br>
                 
                 <label> Enter the Current :</label>
-                <input type="number" step="0.01" name="Current" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="0.5" max="1" name="Current" placeholder="Enter " required><br>
 
                 <label> Enter the Temperature 2 :</label>
-                <input type="number" step="0.01" name="temp2" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="110" max="240"  name="temp2" placeholder="Enter " required><br>
 
                 <label> Enter the Temperature 3 :</label>
-                <input type="number" step="0.01" name="temp3" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="110" max="240" name="temp3" placeholder="Enter " required><br>
 
                 <label> Enter the Temperature 4 :</label>
-                <input type="number" step="0.01" name="temp4" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="110" max="240" name="temp4" placeholder="Enter " required><br>
 
                 <label> Enter the Temperature 5 :</label>
-                <input type="number" step="0.01" name="temp5" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="110" max="240" name="temp5" placeholder="Enter " required><br>
 
                 <label> Enter the Temperature 6 :</label>
-                <input type="number" step="0.01" name="temp6" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="110" max="240" name="temp6" placeholder="Enter " required><br>
 
                 <label> Enter the Ambient Tempearture :</label>
-                <input type="number" step="0.01" name="temp7" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="27" max="40" name="temp7" placeholder="Enter " required><br>
 
                 <label> Enter the Room Tempearture :</label>
-                <input type="number" step="0.01" name="temp8" placeholder="Enter " required><br>
+                <input type="number" step="0.01" min="28" max="34" name="temp8" placeholder="Enter " required><br>
                 
                 <div class="wrap">
                     <button class="button">CLICK , TO PREDICT THE OUTPUT</button>
